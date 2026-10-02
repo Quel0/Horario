@@ -1,0 +1,31 @@
+:root{--font:'Fredoka','Baloo 2','Comic Sans MS',system-ui,sans-serif;--ink:#4a2f6b;
+--lengua:#ffb3d1;--valencia:#ffd9a0;--mates:#b9a6ff;--medi:#a8ecc8;--ingles:#9fd6ff;--ef:#ffb0a0;
+--musica:#f6a8f0;--plastica:#fff09a;--valores:#ffc2dc;--religion:#d9d2ff;--libre:#b8f0ee;--tutoria:#ffd0b5}
+.lengua{--c:var(--lengua)}.valencia{--c:var(--valencia)}.mates{--c:var(--mates)}.medi{--c:var(--medi)}
+.ingles{--c:var(--ingles)}.ef{--c:var(--ef)}.musica{--c:var(--musica)}.plastica{--c:var(--plastica)}
+.valores{--c:var(--valores)}.religion{--c:var(--religion)}.libre{--c:var(--libre)}.tutoria{--c:var(--tutoria)}
+
+@page{size:A4 landscape;margin:8mm}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;font-family:var(--font);color:#2d1b45;background:#fff;padding:0}
+header{text-align:center;margin-bottom:4mm}
+h1{margin:0;font-size:26pt;color:#e0408a;font-weight:700}
+header p{margin:1mm 0 0;font-size:10pt}
+table{width:100%;border-collapse:separate;border-spacing:1.6mm}
+th,td{padding:0}
+.hora{width:23mm;font-size:8.5pt;font-weight:600;background:#f4eeff;border:.4mm solid #b9a6ff;border-radius:3mm;padding:1mm;text-align:center}
+.dia span{display:block;background:#a98bff;color:#fff;border-radius:3mm;padding:2.2mm;font-size:12pt;font-weight:600}
+.card{height:100%;min-height:17mm;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3mm;text-align:center;
+background:var(--c);border:.4mm solid #2d1b45;border-radius:4mm;padding:1.4mm}
+.card strong{font-size:10.5pt;font-weight:600;line-height:1.1}
+.card em{font-style:normal;font-size:7.5pt;font-weight:600;background:#fff;border-radius:9mm;padding:0 2mm}
+.card small{font-size:7pt}
+.ico{font-size:12pt}
+.vacio{border:.4mm dashed #c9b8ee;border-radius:4mm}
+.banda td{text-align:center;border-radius:3mm;padding:1.4mm;border:.4mm solid #2d1b45}
+.banda .b{font-size:10.5pt;font-weight:700;letter-spacing:2px}
+.banda small{margin-left:4mm;font-size:8pt}
+.patio td{background:#d4f6e1}.tarde td{background:#e6e0ff}
+tr{break-inside:avoid}
+.imprimir{display:block;margin:6mm auto 0;font:600 14px var(--font);color:#fff;background:#e0408a;border:0;border-radius:99px;padding:10px 24px;cursor:pointer}
+@media print{.imprimir{display:none}}
